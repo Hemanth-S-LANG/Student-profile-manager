@@ -1,0 +1,26 @@
+#loginPage{
+    top:180px;
+    display:flex;
+    justify-content: center;
+    gap:5px;
+    flex-direction: column;
+    width:150px;
+    position:relative;
+    left:700px;
+   
+}
+#login{
+    position:relative;
+    left:700px;
+    top:170px;
+}
+body{
+    overflow: hidden;
+    display:flex;
+    height:100%;
+    align-items: center;
+}
+.button{
+    position:relative;
+    top:30px;
+}
