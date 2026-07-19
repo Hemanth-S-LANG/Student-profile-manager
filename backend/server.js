@@ -47,10 +47,12 @@ app.post('/register',async(req,res)=>{
     password:hashedPassword});
     await user1.save();
     res.json(user1);
+    console.log(user1);
 })
 app.get('/profile',auth,async(req,res)=>{
     const user=await Profile.findById(req.user.id);
     res.json(user);
+    console.log(user);
 })
 app.delete('/profile',auth,async(req,res)=>{
     const user=await Profile.findByIdAndDelete(req.user.id);

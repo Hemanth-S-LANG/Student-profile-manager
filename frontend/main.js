@@ -48,7 +48,6 @@ loginButton.addEventListener("click",async(e)=>{
         })
     })
     const user=await response.json();
-    console.log(user);
     localStorage.setItem("token", user.token);
     window.location.href="profile.html";
 })
